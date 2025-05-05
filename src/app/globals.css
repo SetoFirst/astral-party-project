@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.spinners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes focus-in-contract {
+    0% {
+        letter-spacing: 1em;
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.hover\:animate-contract-expand:hover {
+    animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s 1 normal both;
+}
