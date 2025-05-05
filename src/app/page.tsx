@@ -1,9 +1,22 @@
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
+
 import MainLayout from "./components/MainLayout";
 import CharacterCards from "./store/CharacterCards";
 
-export const runtime = "edge";
+// Middleware ตรวจสอบการ login
+async function checkAuth() {
+  const cookieStore = await cookies();
+  const token = cookieStore.get("auth_token");
 
-function Home() {
+  if (!token) {
+    redirect("/login");
+  }
+}
+
+export default async function Home() {
+  await checkAuth(); // ถ้ายังไม่ login จะถูก redirect ไปหน้า login
+
   return (
     <div className="bg-gradient-to-tr from-[#be185d]/50 via-[#f472b6]/50 to-[#fbcfe8]/50 mx-4 mt-4">
       <MainLayout></MainLayout>
@@ -25,5 +38,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
