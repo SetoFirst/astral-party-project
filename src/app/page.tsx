@@ -1,26 +1,11 @@
-import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
-
 import MainLayout from "./components/MainLayout";
 import CharacterCards from "./store/CharacterCards";
 
-// Middleware ตรวจสอบการ login
-async function checkAuth() {
-  const cookieStore = await cookies();
-  const token = cookieStore.get("auth_token");
-
-  if (!token) {
-    redirect("/login");
-  }
-}
-
-export default async function Home() {
-  await checkAuth(); // ถ้ายังไม่ login จะถูก redirect ไปหน้า login
-
+export default function Home() {
   return (
     <div className="bg-gradient-to-tr from-[#be185d]/50 via-[#f472b6]/50 to-[#fbcfe8]/50 mx-4 mt-4">
       <MainLayout></MainLayout>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center pt-5">
         <div className="text-center pt-10 text-[30px] bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 text-transparent bg-clip-text text-2xl">
           <b>Welcome to the</b>
         </div>
@@ -29,11 +14,7 @@ export default async function Home() {
           alt="Astral"
         />
       </div>
-      <div className="pl-10">
-        <button className="bg-pink-600 text-white font-bold text-xl py-3 px-4 rounded-[20px]">
-          CharectersAll
-        </button>
-      </div>
+
       <CharacterCards></CharacterCards>
     </div>
   );
