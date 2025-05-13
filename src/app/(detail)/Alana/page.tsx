@@ -2,9 +2,6 @@
 import { useRouter } from "next/navigation";
 import React from "react";
 import { discription } from "@/app/components/PostCard";
-
-export const runtime = "edge";
-
 interface MyComponentProps {
   emojicon: string | undefined;
   icon: string;

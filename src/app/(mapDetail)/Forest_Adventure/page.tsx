@@ -6,8 +6,6 @@ import {
   ListForest_AdventureDown,
 } from "@/app/store/ListPlatform";
 
-export const runtime = "edge";
-
 export default function ListForest_Adventure() {
   const router = useRouter();
   const BackClick = () => router.push("/map");

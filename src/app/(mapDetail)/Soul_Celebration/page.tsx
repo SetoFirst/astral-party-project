@@ -3,8 +3,6 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { ListSoul_Celebration } from "@/app/store/ListPlatform";
 
-export const runtime = "edge";
-
 export default function Soul_Celebration() {
   const router = useRouter();
   const BackClick = () => router.push("/map");

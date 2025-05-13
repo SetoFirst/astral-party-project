@@ -3,8 +3,6 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { ListSakura_Townlet } from "@/app/store/ListPlatform";
 
-export const runtime = "edge";
-
 export default function Sakura_Townlet() {
   const router = useRouter();
   const BackClick = () => router.push("/map");

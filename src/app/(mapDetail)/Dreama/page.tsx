@@ -3,8 +3,6 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { ListDreama } from "@/app/store/ListPlatform";
 
-export const runtime = "edge";
-
 export default function Amusement_Park() {
   const router = useRouter();
   const BackClick = () => router.push("/map");

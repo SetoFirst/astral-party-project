@@ -3,8 +3,6 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { ListPhantom_City } from "@/app/store/ListPlatform";
 
-export const runtime = "edge";
-
 export default function Phantom_City() {
   const router = useRouter();
   const BackClick = () => router.push("/map");

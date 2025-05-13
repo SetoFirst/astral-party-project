@@ -6,8 +6,6 @@ import {
   ListMagic_AcademyLibrary,
 } from "@/app/store/ListPlatform";
 
-export const runtime = "edge";
-
 export default function Magic_Academy() {
   const router = useRouter();
   const BackClick = () => router.push("/map");

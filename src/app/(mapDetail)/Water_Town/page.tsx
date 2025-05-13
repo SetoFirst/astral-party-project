@@ -3,8 +3,6 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { ListWater_Town } from "@/app/store/ListPlatform";
 
-export const runtime = "edge";
-
 export default function Water_Town() {
   const router = useRouter();
   const BackClick = () => router.push("/map");

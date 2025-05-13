@@ -1,0 +1,304 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/store/[id]",
+      "regex": "^/store/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/store/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/A.L",
+      "regex": "^/A\\.L(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/A\\.L(?:/)?$"
+    },
+    {
+      "page": "/Alana",
+      "regex": "^/Alana(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Alana(?:/)?$"
+    },
+    {
+      "page": "/Ame",
+      "regex": "^/Ame(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Ame(?:/)?$"
+    },
+    {
+      "page": "/Amusement_Park",
+      "regex": "^/Amusement_Park(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Amusement_Park(?:/)?$"
+    },
+    {
+      "page": "/Crossroads",
+      "regex": "^/Crossroads(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Crossroads(?:/)?$"
+    },
+    {
+      "page": "/Dreama",
+      "regex": "^/Dreama(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Dreama(?:/)?$"
+    },
+    {
+      "page": "/Fanny",
+      "regex": "^/Fanny(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Fanny(?:/)?$"
+    },
+    {
+      "page": "/Fen",
+      "regex": "^/Fen(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Fen(?:/)?$"
+    },
+    {
+      "page": "/Forest_Adventure",
+      "regex": "^/Forest_Adventure(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Forest_Adventure(?:/)?$"
+    },
+    {
+      "page": "/Gift_Plaza",
+      "regex": "^/Gift_Plaza(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Gift_Plaza(?:/)?$"
+    },
+    {
+      "page": "/HaiQing",
+      "regex": "^/HaiQing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/HaiQing(?:/)?$"
+    },
+    {
+      "page": "/Jasmine",
+      "regex": "^/Jasmine(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Jasmine(?:/)?$"
+    },
+    {
+      "page": "/KAngel",
+      "regex": "^/KAngel(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/KAngel(?:/)?$"
+    },
+    {
+      "page": "/Komachi",
+      "regex": "^/Komachi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Komachi(?:/)?$"
+    },
+    {
+      "page": "/Luka",
+      "regex": "^/Luka(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Luka(?:/)?$"
+    },
+    {
+      "page": "/Lulu",
+      "regex": "^/Lulu(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Lulu(?:/)?$"
+    },
+    {
+      "page": "/Magic_Academy",
+      "regex": "^/Magic_Academy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Magic_Academy(?:/)?$"
+    },
+    {
+      "page": "/Megas",
+      "regex": "^/Megas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Megas(?:/)?$"
+    },
+    {
+      "page": "/Mengzhao",
+      "regex": "^/Mengzhao(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Mengzhao(?:/)?$"
+    },
+    {
+      "page": "/Mimi",
+      "regex": "^/Mimi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Mimi(?:/)?$"
+    },
+    {
+      "page": "/Misaki",
+      "regex": "^/Misaki(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Misaki(?:/)?$"
+    },
+    {
+      "page": "/NancyLu",
+      "regex": "^/NancyLu(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/NancyLu(?:/)?$"
+    },
+    {
+      "page": "/Nardis",
+      "regex": "^/Nardis(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Nardis(?:/)?$"
+    },
+    {
+      "page": "/Padman",
+      "regex": "^/Padman(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Padman(?:/)?$"
+    },
+    {
+      "page": "/Pandaman",
+      "regex": "^/Pandaman(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Pandaman(?:/)?$"
+    },
+    {
+      "page": "/Papara",
+      "regex": "^/Papara(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Papara(?:/)?$"
+    },
+    {
+      "page": "/Parunan",
+      "regex": "^/Parunan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Parunan(?:/)?$"
+    },
+    {
+      "page": "/Phantom_City",
+      "regex": "^/Phantom_City(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Phantom_City(?:/)?$"
+    },
+    {
+      "page": "/Ren",
+      "regex": "^/Ren(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Ren(?:/)?$"
+    },
+    {
+      "page": "/Sakura_Townlet",
+      "regex": "^/Sakura_Townlet(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Sakura_Townlet(?:/)?$"
+    },
+    {
+      "page": "/Soul_Celebration",
+      "regex": "^/Soul_Celebration(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Soul_Celebration(?:/)?$"
+    },
+    {
+      "page": "/Water_Town",
+      "regex": "^/Water_Town(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Water_Town(?:/)?$"
+    },
+    {
+      "page": "/Z3000",
+      "regex": "^/Z3000(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/Z3000(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/cards",
+      "regex": "^/cards(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cards(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/forgot-password",
+      "regex": "^/forgot\\-password(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/forgot\\-password(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/map",
+      "regex": "^/map(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/map(?:/)?$"
+    },
+    {
+      "page": "/register",
+      "regex": "^/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/register(?:/)?$"
+    },
+    {
+      "page": "/reset-password",
+      "regex": "^/reset\\-password(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/reset\\-password(?:/)?$"
+    },
+    {
+      "page": "/store",
+      "regex": "^/store(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/store(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}
