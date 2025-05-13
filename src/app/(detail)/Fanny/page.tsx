@@ -36,7 +36,7 @@ const ExStat = ({ emojicon }: MyComponentProps) => (
   <img className="bg-green-300" src={emojicon} alt="" />
 );
 
-const pageCard = () => {
+const PageCard = () => {
   const router = useRouter();
   const BackClick = () => router.push("/");
 
@@ -145,4 +145,4 @@ const pageCard = () => {
   );
 };
 
-export default pageCard;
+export default PageCard;

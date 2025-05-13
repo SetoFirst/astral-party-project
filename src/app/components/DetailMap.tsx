@@ -64,8 +64,11 @@ export default function DetailMap() {
   }, [data]);
 
   // เปลี่ยนค่า input ในฟอร์ม
-  const handleChange = (e: { target: { name: any; value: any } }) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
 
   // เปิดฟอร์มเพื่อเพิ่มข้อมูลใหม่

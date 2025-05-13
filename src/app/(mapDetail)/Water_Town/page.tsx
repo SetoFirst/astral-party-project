@@ -10,7 +10,7 @@ export default function Water_Town() {
   const BackClick = () => router.push("/map");
 
   // State สำหรับเก็บข้อมูลแพลตฟอร์ม
-  const [platforms, setPlatforms] = useState(ListWater_Town);
+  const [platforms /*setPlatforms*/] = useState(ListWater_Town);
 
   return (
     <div className="bg-gradient-to-tr from-[#be185d]/50 via-[#f472b6]/50 to-[#fbcfe8]/50 mx-4 mt-4 min-h-screen flex flex-col items-center">
