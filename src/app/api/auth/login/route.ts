@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
       { status: 400 }
     );
 
-  const isValid = await bcrypt.compare(password, user.password);
+  const isValid = await bcrypt.compare(password, user.password!);
   if (!isValid)
     return NextResponse.json(
       { message: "Invalid credentials" },
@@ -28,10 +28,10 @@ export async function POST(req: NextRequest) {
   });
 
   // 🍪 เซ็ต cookie ชื่อ user_email
-  response.cookies.set("user_email", user.email, {
+  response.cookies.set("user_email", user.email!, {
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production", // ใน production ควรใช้ HTTPS
-    maxAge: 60 * 60 * 24 * 7, // 7 วัน
+    secure: process.env.NODE_ENV === "production",
+    maxAge: 60 * 60 * 24 * 7,
     path: "/",
   });
 
